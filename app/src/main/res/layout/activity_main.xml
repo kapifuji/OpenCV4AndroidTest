@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:res-auto="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.kapifuji.opencvtest.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <org.opencv.android.JavaCameraView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible"
+            android:id="@+id/camera_view"
+            res-auto:show_fps="true"
+            res-auto:camera_id="any" />
+
+        <TextView
+            android:id="@+id/ja_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="#00000000"
+            android:gravity="center_horizontal"
+            android:rotation="270"
+            android:text="日本語"
+            android:textColor="#FF0000"
+            res-auto:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="157dp"
+            tools:text="日本語です" />
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>
